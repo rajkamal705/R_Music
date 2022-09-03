@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Lato:wght@300;400&family=Roboto&family=Ubuntu:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Lato:wght@300;400&family=Roboto&family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
+body {
+    /* background-color: antiquewhite; */
+    background-color: rgba(33, 37, 45);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ nav {
+    font-family: 'Lato', sans-serif;
+}
+
+nav ul {
+    display: flex; /* it will place all the items of nav bar in horizontally. */
+    align-items: center; /* it will bring all the items of nav bar at center. */
+    list-style-type: none; /* it will remove dot from 'ul' list of nav bar items */
+    height: 65px;
+    /* background-color: rgba(33, 37, 45); */
+    background-color: white;
+    color: black;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 60px;
+    /* padding = '0' from top and bottom and padding = 8px from left and right */
+    /* padding: 0 12px; */
+}
+
+/* to bring Spotify text at center of nav. */
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.songList h1 {
+    font-size: 25px;
+    margin: 12px 12px;
+}
+
+.container {
+    min-height: 72vh;
+    /* background-color: black; */
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 25px auto;
+    width: 80%; /* it will make box in the middle of the page. */
+    border-radius: 12px;
+    /* background-image: url(bg.jpg); */
+}
+
+.songItemContainer {
+    margin-top: 30px;
+}
+
+.bottom {
+    position: sticky;
+    height: 80px;
+    /* background-color: rgba(33, 37, 45); */
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* it will bring scroll bar and (play, forward and backward) icon in column */
+    margin: 10px 80px;
+    border-radius: 4px;
+}
+
+.icons {
+    margin-top: 10px; /* distance of icons from scroll bar */
+}
+
+.icons i{
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#myProgressBar {
+    width: 60vw;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.songItem {
+    height: 40px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 6px 12px;
+    /* justify-content: space-between; */
+    align-items: center;
+    border-radius: 30px;
+}
+
+.songItem img {
+    /* width: 50px;
+    margin: 0 20px; */
+
+    height: 35px;
+    margin: 0 20px;
+    border-radius: 30px;
+}
+
+
+/* .timestamp {
+    margin: 0 40px;
+} */
+
+.songlistplay {
+    margin: 0 30px;
+}
+
+.timestamp i{
+    margin: 0 6px;
+    cursor: pointer;
+    color: rgba(237,28,36);
+}
+
+.songInfo{
+    position: absolute;
+    left: 13vw;
+    top: 7vh;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+#masterPlay {
+    color: rgba(237,28,36);
+}
